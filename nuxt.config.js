@@ -26,8 +26,9 @@ export default {
     buildModules: [
         // https://go.nuxtjs.dev/typescript
         '@nuxt/typescript-build',
-        // https://go.nuxtjs.dev/tailwindcss
         '@nuxtjs/tailwindcss',
+        '@nuxtjs/composition-api/module',
+        '@pinia/nuxt',
     ],
 
     // Modules: https://go.nuxtjs.dev/config-modules
@@ -61,7 +62,6 @@ export default {
 
     i18n: {
         locales: [
-            { code: 'en', iso: 'en-US', file: 'en.json' },
             { code: 'fr', iso: 'fr-FR', file: 'fr.json' },
         ],
         defaultLocale: 'fr',
